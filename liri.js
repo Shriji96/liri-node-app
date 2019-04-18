@@ -56,6 +56,7 @@ function getMovie(movie) {
     .search({ type: "movie", query: movie})
     .then(function(response) {
         console.log(response)
+        var movies = response.data
     })
     
 }
